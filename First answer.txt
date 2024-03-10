@@ -1,0 +1,13 @@
+First answer
+ product and product_category entities is one-to-many relationship
+product is one and product catergory have mutiple caterory
+ 
+product table references excatly one record in product category table through a foreign key constrain.
+
+second answer
+To ensure that each product in the "Product" table has a valid category assigned to it
+ foreign key constraint this ensure that every value in the foregin key column of the product table must correspond to an existing primary key value in the product category
+
+we can create a trigger that fires before inserting or updating a record in the product table checking whether the assigned category exists in the product category table
+
+
